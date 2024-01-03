@@ -54,6 +54,7 @@ experience_unit("Brandeis :orange[Quant Club]", "Software Engineer",
                 """)
 st.link_button("Club website", "https://brandeisquantclub.org")
 
+st.divider()
 # Research Assistant ----------------------------------------------------------------
 experience_unit(":orange[Brandeis University] | Anthropology Department", "Research Assistant", 
                 "Sep 2022 – Aug 2023", "Waltham, MA", 
