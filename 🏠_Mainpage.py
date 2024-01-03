@@ -29,8 +29,7 @@ with col1:
     st.markdown("###### 🏄 Interest: Full Stack, Data Science, Product Management")
     st.markdown("###### 🟡 Favorite Color: Yellow")
     st.markdown("###### 👀 Linkedin: www.linkedin.com/in/haoran-cheng-018b9318b/")
-    # st.markdown("")
-    st.markdown("")
+    
     #st.divider()
     with open("src/resume.pdf", "rb") as file:
         pdf_file = file.read()
