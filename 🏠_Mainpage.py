@@ -22,6 +22,7 @@ with col1:
     'I am a passionate and curious explorer currently pursuing a Computer Science and Anthropology major at Brandeis University, expected to graduate in May 2025. ' +
     '**I believe in the intersectionality of quantitative and qualitative subjects, that neither approach alone can lead one to the absolute truth.**'
     )
+    st.markdown("###### 😄 Name: Haoran Cheng, just call me Harry!")
     st.markdown("###### 👉 Study: Brandeis University")
     # st.markdown("#### 🇨🇳 Nationality: Chinese")
     st.markdown("###### 📍 Location: Boston, MA")
