@@ -4,33 +4,24 @@ from constant import *
 
 st.set_page_config(page_title="Main Page", page_icon="🏠", layout="wide") 
 
-#sidebar
+#sidebar --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 st.sidebar.success("Select a page above.")
 
-# Add the badge to the sidebar
-# with st.sidebar:
-# components.html(linkedin_badge_html, height=200)
 
-#main page
+#main page --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 st.header("About Me",divider='rainbow')
 
 col1, col2, col3 = st.columns([1.3 ,0.2, 1])
 
 with col1:
-    st.write(
-    ' Starting from physical therapist, to UX designer, to software engineer and product manager... ' +
-    'I am a passionate and curious explorer currently pursuing a Computer Science and Anthropology major at Brandeis University, expected to graduate in May 2025. ' +
-    '**I believe in the intersectionality of quantitative and qualitative subjects, that neither approach alone can lead one to the absolute truth.**'
-    )
-    st.markdown("###### 😄 Name: Haoran Cheng, just call me Harry!")
-    st.markdown("###### 👉 Study: Brandeis University")
-    # st.markdown("#### 🇨🇳 Nationality: Chinese")
-    st.markdown("###### 📍 Location: Boston, MA")
-    st.markdown("###### 🏄 Interest: Full Stack, Data Science, Product Management")
+    st.write(info['brief'])
+    st.markdown(f"###### 😄 Name: {info['name']}")
+    st.markdown(f"###### 👉 Study: {info['study']}")
+    st.markdown(f"###### 📍 Location: {info['location']}")
+    st.markdown(f"###### 📚 Interest: {info['interest']}")
     st.markdown("###### 🟡 Favorite Color: Yellow")
-    st.markdown("###### 👀 Linkedin: www.linkedin.com/in/haoran-cheng-018b9318b/")
+    st.markdown(f"###### 👀 Linkedin: {linkedin_link}")
     
-    #st.divider()
     with open("src/resume.pdf", "rb") as file:
         pdf_file = file.read()
 
@@ -43,6 +34,7 @@ with col1:
 with col3:
     st.image("src/portrait.jpeg", width=360)
 
+# skills --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 st.subheader("My :blue[skills] ⚒️",divider='rainbow') #,divider='rainbow'
 
 def skill_tab():
@@ -59,6 +51,3 @@ def skill_tab():
                 break
 with st.spinner(text="Loading section..."):
     skill_tab()
-
-# x = st.slider("Select a value")
-# st.markdown(f"# {x} squared is {x * x}")
