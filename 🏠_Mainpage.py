@@ -7,9 +7,7 @@ st.set_page_config(page_title="Main Page", page_icon="🏠", layout="wide")
 #sidebar --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 with st.sidebar:
     st.success("Select a page above.")
-    st.link_button("March 22 resource", "https://bitbybitcoding.notion.site/L4-basic-data-structure-47041119a2a046bcaa3305cc352743a7")
-
-
+    
 #main page --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 st.header("About Me",divider='rainbow')
 
