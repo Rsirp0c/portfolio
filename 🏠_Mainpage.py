@@ -5,7 +5,9 @@ from constant import *
 st.set_page_config(page_title="Main Page", page_icon="🏠", layout="wide") 
 
 #sidebar --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-st.sidebar.success("Select a page above.")
+with st.sidebar:
+    st.success("Select a page above.")
+    st.link_button("March 22 resource", "https://bitbybitcoding.notion.site/L4-basic-data-structure-47041119a2a046bcaa3305cc352743a7")
 
 
 #main page --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
