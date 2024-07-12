@@ -1,7 +1,9 @@
 import streamlit as st 
 from constant import *
 
-st.set_page_config(page_title="Contacts", page_icon="🌏") #layout="wide"
+st.set_page_config(page_title="Contacts", page_icon="🌏",initial_sidebar_state="collapsed",layout="wide") #
+
+menu()
 
 st.markdown(f"##### 📞 Phone: +1 {phone}")   
 st.markdown(f"##### ✉️ Email: {email}")

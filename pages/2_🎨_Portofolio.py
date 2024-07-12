@@ -3,13 +3,20 @@ import streamlit.components.v1 as components
 from constant import *
 
 # page config ----------------------------------------------------------------
-st.set_page_config(page_title="Portofolio", page_icon="🎨", layout="wide")
+st.set_page_config(page_title="Portofolio", page_icon="🎨", layout="wide",initial_sidebar_state="collapsed")
+
+menu()
+
 st.header("🎨 Portfolio",divider='rainbow')
 
 # page functions ----------------------------------------------------------------
 def Portfolio_component(header, content):
    st.subheader(header, divider='grey')
    st.write(content)
+
+# RAG  ----------------------------------------------------------------
+Portfolio_component(Portfolio[5][0], Portfolio[5][1])
+st.link_button("Go to :blue[Source Code]", "https://github.com/Rsirp0c/CS217-final-project")
 
 # Deis Evaluation ----------------------------------------------------------------
 Portfolio_component(Portfolio[1][0], Portfolio[1][1])

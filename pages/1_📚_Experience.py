@@ -2,7 +2,10 @@ import streamlit as st
 import streamlit.components.v1 as components
 from constant import *
 
-st.set_page_config(page_title="Experience", page_icon="📚", layout="wide")
+st.set_page_config(page_title="Experience", page_icon="📚", layout="wide",initial_sidebar_state="collapsed")
+
+menu()
+
 st.header("📚 Experience",divider='rainbow')
 st.write("")
 
