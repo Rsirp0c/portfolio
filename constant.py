@@ -31,14 +31,23 @@ info = {'brief':
         'name':'Haoran cheng', 
         'study':'Brandeis University',
         'location':'Boston, MA',
-        'interest':'Full Stack, Data Science, Product Management',
-        'skills':['Python','Java','Javascript','Typescript','Shell','HTML & CSS','React','Node.js','Tableau','Streamlit','PySpark','Svelte','Docker','Kafka','Kubernetes','MongoDB','PostgreSQL','MySQL','SQLite','AWS','Github','Gitlab','Figma','OpenAI API','Excalidraw','Trello','REST api','HTTP'],
+        'interest':'Full Stack Engineer, AI Engineer, Product Management',
+        'skills':['Python','Java','Javascript','Typescript','Shell','HTML & CSS',
+                  'React','Node.js','PySpark','Docker','Kubernetes','MongoDB',
+                  'PostgreSQL','MySQL','SQLite','AWS','Git','LangGraph','fastAPI','Pinecone',
+                  'RAG', 'Mcp','LLM','REST api','HTTP'],
         }
 
 # Experience --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #[[header, subheader, date, location, content, link, link_url], [...], etc.]
 
-Experience = [
+Experience = [[":green[BayMeters] | IoT Stealth Startup", "Founding Engineer",  
+              "Aug 2024 – present", "San Jose, CA",  
+              """  
+              - Developed the company website using **TypeScript**, **React**, **Tailwind CSS**, **Node.js**, **RESTful API**, and **Elasticsearch**, ensuring a responsive design and robust product search functionality.  
+              - Implemented a **CI/CD pipeline** with **GitHub Actions** and deployed the service using **Docker**, **Nginx**, **AWS ECR**, **ECS**, and an **Application Load Balancer**, integrating with **GoDaddy DNS** for domain management.  
+              """,  
+              "Company website", "https://www.baymeters.com"],
               [":green[Chewy] | E-commerce", "Software Engineer Intern", 
               "June 2024 – present", "Boston, MA", 
               """
@@ -115,6 +124,12 @@ Portfolio = { 1:[':blue[Deis]Evaluation - Course Evaluation Website',
                 - Developed a **RAG** chatbot that support difference choices over Embedding model, chunking strategy, top k retreival, LLM model, prompt engineering, and meta-data retreival search.
                 - Implemented the file uploading workflow; Utilized **Langchain splitter** module and Python script to clean and chunk the uploaded file and use Huggingface sentence transformers and **Pinecone** to vectorize and store data.
                 - Used SpaCy NER model to retreive meta data from prompt and ran a hybrid search using meta-data and vector.
+                """],
+              6:[':blue[job] search chatbot',
+                """
+                - Developed an LLM-powered RAG chatbot to search for matching jobs based on user queries, deployed using Vercel.
+                - Implemented chat streaming and citation support using Next.js and FastAPI, along with an agentic logic to decide whether to perform a RAG search and to dynamically adjust the frontend reply format.
+                - Built a web scraper to extract job from sources such as Google and LinkedIn, and upserted the data into Pinecone.
                 """]
             }
               

@@ -16,6 +16,9 @@ with body:
       st.subheader(header, divider='grey')
       st.write(content)
 
+   Portfolio_component(Portfolio[6][0], Portfolio[6][1])
+   st.link_button("View :blue[Website]", "https://jobs-chatbot.vercel.app")
+
    # RAG  ----------------------------------------------------------------
    Portfolio_component(Portfolio[5][0], Portfolio[5][1])
    st.link_button("Go to :blue[Source Code]", "https://github.com/Rsirp0c/CS217-final-project")
